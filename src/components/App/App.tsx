@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { Votes, VoteType } from '../../types/votes';
 import CafeInfo from '../CafeInfo/CafeInfo';
-import Notifications from '../Notifications/Notifications';
+import Notification from '../Notification/Notification';
 import VoteOptions from '../VoteOptions/VoteOptions';
 import VoteStats from '../VoteStats/VoteStats';
 import css from './App.module.css';
@@ -49,7 +49,7 @@ function App() {
           positiveVotes={positiveRate}
         />
       ) : (
-        <Notifications />
+        <Notification />
       )}
     </div>
   );
